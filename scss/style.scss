@@ -1,0 +1,9 @@
+/* Importowanie podstawowych styli */
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/reset";
+
+/* Importowanie komponentów */
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
