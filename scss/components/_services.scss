@@ -1,0 +1,51 @@
+.services{
+  width: 100%;
+  text-align: center;
+  &__title{
+    color: $color-orange;
+    font-size: $font-size-xxl;
+  }
+  &__content{
+    margin-top: 50px;
+    width: 100%;
+    @include d-flex{
+      justify-content: center;
+    }
+  }
+  &__card{
+    @include d-flex{
+      flex-direction: column;
+      justify-content: center;
+    }
+    text-align: center;
+    position: relative;
+    background: $color-gray;
+    height: 350px;
+    border-radius: 5px;
+    margin: 0 $m-1;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &-img{
+      margin: $m-1 auto;
+      width: 15%;
+    }
+    &-text{
+      margin:$m-1 auto;
+      font-size: $font-size-lg;
+      color: $color-light;
+    }
+    &-description{
+      color: $color-light;
+      letter-spacing: 1px;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-light;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    &:hover{
+      transform: translateY(-4px);
+    }
+  }
+
+}

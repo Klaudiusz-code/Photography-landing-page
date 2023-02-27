@@ -1,0 +1,77 @@
+.footer{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: $color-gray;
+
+
+  &__content{
+    @include d-flex{
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    color: $color-light;
+  }
+  &__title{
+    color: $color-orange;
+    font-size: $font-size-lg;
+    margin-top: $m-1-5;
+    margin-bottom: $m-0-5;
+  }
+  &__desc{
+    max-width: 50%;
+    letter-spacing: 1px;
+    font-weight: $font-weight-light;
+  }
+  &__list{
+    @include d-flex{
+      justify-content: center;
+    }
+    margin: $m-0-5 0 $m-1-5;
+
+  }
+  &__item{
+    @include d-flex{
+      justify-content: center;
+    }
+    width: 45px;
+    height: 45px;
+    color: $color-orange;
+    font-size: $font-size-md;
+    cursor: pointer;
+    margin: 0 $m-1;
+    transition: 0.2s ease-in-out;
+    border: 3px solid $color-orange;
+    border-radius: 50%;
+
+    &--fb:hover{
+      color: $color-light;
+      background: #4267B2;
+    }
+    &--lnk:hover{
+      color: $color-light;
+      background: #0077b5;
+    }
+    &--inst:hover{
+      color: $color-light;
+      background: #FCAF45;
+    }
+    &--yt:hover{
+      color: $color-light;
+      background: #FF0000
+    ;
+    }
+  }
+  &__bottom{
+    text-align: center;
+    background: #282828;
+    padding: 20px 0;
+
+  }
+  &__copy{
+    font-size: $font-size-sm;
+    color: $color-light;
+  }
+}

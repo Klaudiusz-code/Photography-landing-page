@@ -6,11 +6,197 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <!--        Header         -->
+<header class="header" id="home" style="background-image: url(img/bg3.jpg)">
+        <nav class="nav container">
+            <div class="nav__logo"><h2 class="nav__title">Logo</h2></div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Strona Główna</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">O mnie</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Usługi</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Kontakt</a>
+                </li>
+                <div class="btn__close"><i class='bx bx-x'></i></div>
+
+            </ul>
+            <div class="btn__display"><i class='bx bx-menu-alt-right'></i></div>
+        </nav>
+
+    <div class="header__wrapper container">
+        <h1 class="header__title">Fotografia z Pasją</h1>
+        <p class="header__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, recusandae!</p>
+        <a href="#about" class="btn btn__header">About Me</a>
+    </div>
+</header>
+    <!--        /Header         -->
+
+    <!--        About       -->
+<section class="about container" id="about">
+    <div class="about__wrapper">
+        <div class="about__box">
+            <div class="about__photo">
+                <img src="img/avatar.jfif" class="about__img" alt="My photo">
+            </div>
+        </div>
+        <div class="about__description">
+            <h2 class="about__title">Jan Kowalski</h2>
+            <p class="about__text">Cześć! nazywam się <span class="about__name">Jan Kowalski</span> fotograf specjalizujący się w fotografii ślubnej z siedzibą w Zamościu. Moją misją jest uchwycenie istoty najważniejszych momentów moich klientów poprzez piękne i autentyczne zdjęcia. Staram się zawsze zrozumieć i dostosować do potrzeb i oczekiwań moich klientów, aby zaspokoić ich indywidualne potrzeby i oczekiwania.</p>
+            <a href="#" class="btn__about">Learn more</a>
+        </div>
+    </div>
+</section>
+<!--        /About       -->
 
 
-<script src="/js/index.js"></script>
+<!--        Portfolio         -->
+<section class="portfolio container" id="portfolio">
+    <div class="portfolio__gallery">
+        <h1 class="portfolio__title">Portfolio</h1>
+        <ul class="portfolio__list">
+            <li class="btn__gallery btn__gallery--active" data-filter="all">All</li>
+            <li class="btn__gallery" data-filter="weed">Wesela</li>
+            <li class="btn__gallery" data-filter="nature">Natura</li>
+        </ul>
+        <div class="portfolio__items">
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed1.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat4.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed3.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed4.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed5.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed7.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed8.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat5.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat1.jpg"  class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat2.jfif" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat3.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed6.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox weed"><img src="img/photo/wed2.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat6.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat7.jpg" class="portfolio__image" alt=""></div>
+            <div class="portfolio__itemBox nature"><img src="img/photo/nat8.jpg" class="portfolio__image" alt=""></div>
+        </div>
+        <div class="portfolio__popup-image">
+            <span class="btn__gallery-close"><i class='bx bx-x'></i></span>
+            <img class="portfolio__popup-img" src="img/photo/wed1.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+    <!--        /Portfolio       -->
+
+
+<!--    Services        -->
+    <section class="services container" id="services">
+        <h1 class="services__title">Usługi</h1>
+        <div class="services__content">
+            <div class="services__card"><img src="img/icon/camera.png" class="services__card-img" alt="icon_camera"><h1 class="services__card-text">Fotografia Portretowa</h1><span class="services__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis est fugit officiis, provident tempore?</span></div>
+            <div class="services__card"><img src="img/icon/camera.png" class="services__card-img" alt="icon_camera"><h1 class="services__card-text">Fotrografia Ślubna</h1><span class="services__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis est fugit officiis, provident tempore?</span></div>
+            <div class="services__card"><img src="img/icon/camera.png" class="services__card-img" alt="icon_camera"><h1 class="services__card-text">Fotografia Eventowa</h1><span class="services__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis est fugit officiis, provident tempore?</span></div>
+        </div>
+    </section>
+    <!--    /Services    --->
+
+
+
+    <!--   Contact     -->
+    <section class="contact" id="contact">
+        <div class="contact__info">
+            <div class="contact__header">
+                <h1 class="contact__title">Skontaktuj Się Ze Mną</h1>
+                <p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__box contact__box--phone">
+                    <img class="contact__box-img" src="img/icon/tel.png" alt="telephone">
+                    <span class="contact__box-inf">+48 000 000 00</span>
+                </div>
+                <div class="contact__box contact__box--location">
+                    <img class="contact__box-img" src="img/icon/location.png" alt="location">
+                    <span class="contact__box-inf">Poland</span>
+                </div>
+                <div class="contact__box contact__box--email">
+                    <img class="contact__box-img" src="img/icon/em.png" alt="email">
+                    <span class="contact__box-inf">test@gmail.com</span>
+                </div>
+            </div>
+            <div class="contact__form">
+                <form action="#" class="contact__form-view">
+                    <label>
+                        <input type="text" placeholder="Imie" class="contact__form-input">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Nazwisko" class="contact__form-input">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Email" class="contact__form-input">
+                    </label>
+                    <label>
+                        <textarea name="" placeholder="Twoja wiadomość" cols="30" rows="10" class="contact__form-textarea"></textarea>
+                    </label>
+                    <button class="btn__send" type="submit">Wyślij</button>
+                </form>
+            </div>
+        </div>
+        <!--   /Contact     -->
+
+
+        <!--    Footer    -->
+    </section>
+    <footer class="footer">
+        <div class="footer__content container">
+            <h2 class="footer__title">Lorem Ipsum</h2>
+            <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi.</p>
+            <ul class="footer__list">
+                <li class="footer__item footer__item--fb"><i class='bx bxl-facebook-square'></i></li>
+                <li class="footer__item footer__item--lnk"><i class='bx bxl-linkedin-square'></i></li>
+                <li class="footer__item footer__item--inst"><i class='bx bxl-instagram-alt'></i></li>
+                <li class="footer__item footer__item--yt"><i class='bx bxl-youtube'></i></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">copyright &copy; 2023 logo</p>
+        </div>
+    </footer>
+<!--    /Footer    -->
+    <script src="/js/index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
